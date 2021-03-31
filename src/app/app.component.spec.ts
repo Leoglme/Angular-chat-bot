@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'chatBot'`, () => {
+  it(`should have as title 'dibo-bot'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('chatBot');
+    expect(app.title).toEqual('dibo-bot');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('chatBot app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('dibo-bot app is running!');
   });
 });

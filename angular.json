@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "1e6f4625-18f2-4d17-9efa-6c49dcaba638"
+    "analytics": "16145b68-e0bc-4314-95ce-b6f8b03a10f4"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "chatBot": {
+    "dibo-bot": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,12 +18,12 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/chatBot",
+            "outputPath": "dist/dibo-bot",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "chatBot:build"
+            "browserTarget": "dibo-bot:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "chatBot:build:production"
+              "browserTarget": "dibo-bot:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "chatBot:build"
+            "browserTarget": "dibo-bot:build"
           }
         },
         "test": {
@@ -119,16 +119,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "chatBot:serve"
+            "devServerTarget": "dibo-bot:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "chatBot:serve:production"
+              "devServerTarget": "dibo-bot:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "chatBot"
+  "defaultProject": "dibo-bot"
 }

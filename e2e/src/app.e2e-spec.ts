@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('chatBot app is running!');
+    expect(await page.getTitleText()).toEqual('dibo-bot app is running!');
   });
 
   afterEach(async () => {
